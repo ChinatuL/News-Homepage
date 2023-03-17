@@ -1,0 +1,29 @@
+@import "config";
+@import "header";
+@import "main";
+
+body {
+    @include flex(column, flex-start);
+    width: 80vw;
+    height: 100%;
+    margin: 0 10vw;
+    background-color: $off-white;
+    font-weight: getFontWeight(regular);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: getFontWeight(bold);
+}
+
+h2,
+h3 {
+    font-weight: getFontWeight(semi-bold);
+}

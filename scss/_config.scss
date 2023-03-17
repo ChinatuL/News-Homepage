@@ -1,0 +1,38 @@
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-grayish-blue: hsl(236, 13%, 42%);
+$very-dark-blue: hsl(240, 100%, 5%);
+$font-weight: (
+    "regular": 400,
+    "semi-bold": 700,
+    "bold": 800,
+);
+
+:root {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@function getFontWeight($name) {
+    @return map-get($font-weight, $name);
+}
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: ($direction);
+    justify-content: $justify;
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,31 @@
+.header {
+    @include flex(row, space-between);
+    align-items: center;
+    margin: 3rem 0;
+    width: 100%;
+
+    .menu-btn {
+        display: none;
+    }
+
+    .nav {
+        width: 42%;
+
+        &__list {
+            @include flex(row, space-evenly);
+        }
+
+        &__item {
+            font-weight: getFontWeight(regular);
+
+            &-link {
+                color: $dark-grayish-blue;
+                @include transition;
+
+                &:hover {
+                    color: $soft-red;
+                }
+            }
+        }
+    }
+}
