@@ -1,11 +1,12 @@
 @import "config";
 @import "header";
 @import "main";
+@import "responsive";
 
 body {
     @include flex(column, flex-start);
     width: 80vw;
-    height: 100%;
+    min-height: 100vh;
     margin: 0 10vw;
     background-color: $off-white;
     font-weight: getFontWeight(regular);

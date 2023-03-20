@@ -23,7 +23,12 @@
             <div class="logo">
                 <img src="./assets/images/logo.svg" alt="" class="logo__img" />
             </div>
-            <button type="menu" class="menu-btn" aria-label="Open navbar">
+            <button
+                type="menu"
+                class="menu-btn"
+                aria-label="Open navbar"
+                aria-expanded="false"
+            >
                 <img
                     src="./assets/images/icon-menu.svg"
                     class="menu-btn__open"
@@ -54,6 +59,7 @@
                     </li>
                 </ul>
             </nav>
+            <div class="side-bar"></div>
         </header>
         <main class="main">
             <section class="main-content">
@@ -62,6 +68,12 @@
                         <img
                             src="./assets/images/image-web-3-desktop.jpg"
                             alt=""
+                            class="hero__img-desktop"
+                        />
+                        <img
+                            src="./assets/images/image-web-3-mobile.jpg"
+                            alt=""
+                            class="hero__img-mobile"
                         />
                     </div>
                     <div class="hero__text">
@@ -155,5 +167,6 @@
                 </article>
             </section>
         </main>
+        <script src="./js/script.js"></script>
     </body>
 </html>
