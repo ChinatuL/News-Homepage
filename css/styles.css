@@ -34,8 +34,8 @@
   font-weight: 400;
 }
 .header .nav__item-link {
-  color: hsl(236, 13%, 42%);
   transition: all 0.3s ease-in-out;
+  color: hsl(236, 13%, 42%);
 }
 .header .nav__item-link:hover {
   color: hsl(5, 85%, 63%);
@@ -61,12 +61,12 @@
 .main-content__hero .hero__text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 1.5rem;
   gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 .main-content__hero .hero__text-heading > h1 {
-  font-size: 3.35rem;
   color: hsl(240, 100%, 5%);
+  font-size: 3.35rem;
   line-height: 1.1;
 }
 .main-content__hero .hero__text-description {
@@ -77,14 +77,14 @@
   margin-bottom: 2rem;
 }
 .main-content__hero .hero__text-btn {
+  transition: all 0.3s ease-in-out;
+  padding: 0.8rem 1.5rem;
   background-color: hsl(5, 85%, 63%);
   color: hsl(36, 100%, 99%);
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  padding: 0.8rem 1.5rem;
   font-weight: 700;
   font-size: 0.8rem;
-  transition: all 0.3s ease-in-out;
 }
 .main-content__hero .hero__text-btn:hover {
   background-color: hsl(240, 100%, 5%);
@@ -118,15 +118,15 @@
   line-height: 1.5rem;
 }
 .main-content__aside hr {
-  height: 0.1rem;
   border: none;
+  height: 0.1rem;
   background-color: hsl(233, 8%, 79%);
 }
 .main .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 3.5rem 0;
   gap: 1.6rem;
+  margin: 3.5rem 0;
 }
 .main .footer-content__article {
   display: grid;
@@ -150,8 +150,8 @@
   margin: 0.8rem 0;
 }
 .main .footer-content__article .article__text h3 > a {
-  color: hsl(240, 100%, 5%);
   transition: all 0.3s ease-in-out;
+  color: hsl(240, 100%, 5%);
 }
 .main .footer-content__article .article__text h3 > a:hover {
   color: hsl(5, 85%, 63%);
@@ -197,20 +197,37 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: white;
     width: 0;
     height: 100vh;
     transition: 0.5s;
+    background-color: white;
   }
   .header .slide-in {
     width: 70%;
+  }
+  .header .menu-btn {
+    position: relative;
+    z-index: 3;
+    display: block;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+  }
+  .header .menu-btn__close {
+    display: none;
+  }
+  .header .menu-btn:hover {
+    cursor: pointer;
+  }
+  .header .animate-btn {
+    transform: rotate(720deg);
   }
   .header .nav {
     display: none;
     position: absolute;
     top: 7rem;
-    z-index: 3;
     right: 0;
+    z-index: 3;
   }
   .header .nav__list {
     display: flex;
@@ -236,23 +253,6 @@
       opacity: 1;
       transform: translateX(0%);
     }
-  }
-  .header .menu-btn {
-    position: relative;
-    z-index: 3;
-    display: block;
-    background-color: transparent;
-    border: none;
-    transition: all 0.3s ease-in-out;
-  }
-  .header .menu-btn__close {
-    display: none;
-  }
-  .header .menu-btn:hover {
-    cursor: pointer;
-  }
-  .header .animate-btn {
-    transform: rotate(720deg);
   }
   .header .show-nav {
     display: block;

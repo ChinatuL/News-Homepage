@@ -21,12 +21,12 @@
             .hero__text {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                margin-top: 1.5rem;
                 gap: 1.5rem;
+                margin-top: 1.5rem;
 
                 &-heading > h1 {
-                    font-size: 3.35rem;
                     color: $very-dark-blue;
+                    font-size: 3.35rem;
                     line-height: 1.1;
                 }
 
@@ -40,14 +40,14 @@
                 }
 
                 &-btn {
+                    @include transition;
+                    padding: 0.8rem 1.5rem;
                     background-color: $soft-red;
                     color: $off-white;
                     text-transform: uppercase;
                     letter-spacing: 0.3rem;
-                    padding: 0.8rem 1.5rem;
                     font-weight: getFontWeight(semi-bold);
                     font-size: 0.8rem;
-                    @include transition;
 
                     &:hover {
                         background-color: $very-dark-blue;
@@ -91,8 +91,8 @@
             }
 
             hr {
-                height: 0.1rem;
                 border: none;
+                height: 0.1rem;
                 background-color: $grayish-blue;
             }
         }
@@ -101,8 +101,8 @@
     .footer-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin: 3.5rem 0;
         gap: 1.6rem;
+        margin: 3.5rem 0;
 
         &__article {
             display: grid;
@@ -129,8 +129,8 @@
                     margin: 0.8rem 0;
 
                     & > a {
-                        color: $very-dark-blue;
                         @include transition;
+                        color: $very-dark-blue;
 
                         &:hover {
                             color: $soft-red;

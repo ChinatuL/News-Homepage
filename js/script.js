@@ -6,9 +6,9 @@ const iconOpen = document.querySelector(".menu-btn__open");
 const iconClose = document.querySelector(".menu-btn__close");
 
 const openNav = () => {
-    nav.classList.toggle("show-nav");
-    sideBar.classList.toggle("slide-in");
     menuBtn.classList.toggle("animate-btn");
+    sideBar.classList.toggle("slide-in");
+    nav.classList.toggle("show-nav");
     navLinks.forEach((link) => {
         link.classList.toggle("fade-in");
     });

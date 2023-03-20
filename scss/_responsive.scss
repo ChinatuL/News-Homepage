@@ -46,22 +46,43 @@
             position: fixed;
             top: 0;
             right: 0;
-            background-color: white;
             width: 0;
             height: 100vh;
             transition: 0.5s;
+            background-color: white;
         }
 
         .slide-in {
             width: 70%;
         }
 
+        .menu-btn {
+            position: relative;
+            z-index: 3;
+            display: block;
+            border: none;
+            @include transition;
+            background-color: transparent;
+
+            &__close {
+                display: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .animate-btn {
+            transform: rotate(720deg);
+        }
+
         .nav {
             display: none;
             position: absolute;
             top: 7rem;
-            z-index: 3;
             right: 0;
+            z-index: 3;
 
             &__list {
                 @include flex(column, flex-start);
@@ -89,27 +110,6 @@
                     transform: translateX(0%);
                 }
             }
-        }
-
-        .menu-btn {
-            position: relative;
-            z-index: 3;
-            display: block;
-            background-color: transparent;
-            border: none;
-            @include transition;
-
-            &__close {
-                display: none;
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        .animate-btn {
-            transform: rotate(720deg);
         }
 
         .show-nav {
