@@ -40,6 +40,9 @@
 .header .nav__item-link:hover {
   color: hsl(5, 85%, 63%);
 }
+.header .side-bar {
+  display: none;
+}
 
 .main {
   width: 100%;
@@ -194,6 +197,7 @@
     width: 100%;
   }
   .header .side-bar {
+    display: block;
     position: fixed;
     top: 0;
     right: 0;
